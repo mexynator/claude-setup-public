@@ -1,0 +1,16 @@
+# Marketplaces: "marketplace <name> <github-repo>"
+marketplace claude-plugins-official anthropics/claude-plugins-official
+marketplace ponytail DietrichGebert/ponytail
+marketplace paper paper-design/agent-plugins
+marketplace trailofbits trailofbits/skills
+
+# Plugins: "plugin <name>@<marketplace>"
+plugin ponytail@ponytail
+plugin paper-desktop@paper
+plugin context7@claude-plugins-official
+plugin typescript-lsp@claude-plugins-official
+plugin security-guidance@claude-plugins-official
+plugin superpowers@claude-plugins-official
+plugin claude-code-setup@claude-plugins-official
+plugin claude-md-management@claude-plugins-official
+plugin static-analysis@trailofbits

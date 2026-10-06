@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "playwright-server": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "github-official": {
+      "command": "zsh",
+      "args": [
+        "-lc",
+        "exec docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/github-mcp-server"
+      ]
+    },
+    "mysql": {
+      "command": "zsh",
+      "args": [
+        "-lc",
+        "exec uvx --from mysql-mcp-server mysql_mcp_server"
+      ]
+    },
+    "webstorm": {
+      "type": "http",
+      "url": "http://127.0.0.1:64542/stream"
+    },
+    "laya": {
+      "type": "http",
+      "url": "http://127.0.0.1:8420/mcp/",
+      "headers": {
+        "Authorization": "<LAYA_AUTHORIZATION>"
+      }
+    }
+  }
+}

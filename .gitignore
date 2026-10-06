@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+# Nie committen: enthält Tokens, Verlauf und Session-Daten
+.claude.json
+projects/
+history.jsonl
+backups/
+
+# ZIPs für claude.ai (Einstellungen → Skills), werden lokal erzeugt
+web-skills/
